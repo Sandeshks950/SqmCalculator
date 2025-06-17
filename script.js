@@ -13,9 +13,10 @@ function calculation() {
     document.querySelector("#prsqm").textContent = `Sqm is ${
       (length * height * wires) / 10000
     }`;
-    document.querySelector("#prsqft").textContent = `Sqft is ${
-      ((length * height * wires) / 10000) * 10.7639
-    }`;
+    document.querySelector("#prsqft").textContent = `Sqft is ${(
+      ((length * height * wires) / 10000) *
+      10.7639
+    ).toFixed(2)}`;
   });
 
   closebtn.addEventListener("click", function (e) {
